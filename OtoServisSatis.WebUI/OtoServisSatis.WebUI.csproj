@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d4fdf00a-738d-45a6-be0f-7c191bf4ccb6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="wwwroot\Img\Cars\Slider\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\C# OTOPROJESİ\OtoServisSatis\OtoServisSatis.Data\OtoServisSatis.Data.csproj" />
+    <ProjectReference Include="..\..\..\..\Desktop\C# OTOPROJESİ\OtoServisSatis\OtoServisSatis.Entities\OtoServisSatis.Entities.csproj" />
+    <ProjectReference Include="..\..\..\..\Desktop\C# OTOPROJESİ\OtoServisSatis\OtoServisSatis.Service\OtoServisSatis.Service.csproj" />
+  </ItemGroup>
+
+</Project>
